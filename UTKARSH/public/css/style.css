@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=JetBrains+Mono:wght@300&family=Lato&family=Mukta+Vaani&family=Mulish&family=Nunito:wght@300&family=Pacifico&family=Rubik:wght@300&family=Shadows+Into+Light&display=swap');*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgba(197, 197, 197, 0.77);
+    background-color: #F1F7FB;
+}
+
+.backg{    
+    width: 100%;
+    height: 456px;
+    left: 0px;
+    top: 0px;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: none;
+}
+
+.backg:hover .overlay{
+    display: block;
+}
+/***************** sidebox *******************/
+
+.sidebox{
+    position: fixed;
+    height: 35%;
+    width: 3rem;
+    left: 0;
+    top: 40%;
+    background-color: rgb(206, 205, 205);
+
+}
+
+
+
+/***************** sidebox *******************/
+
+
+
+
+
+.box{
+    
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 500px;
+    border-radius: 31px;
+    margin-left: 10%;
+    transform: translate(0, -50%);
+}
+.navbar{
+    height: 20%;
+    width: 100%;
+    /* background-color: rgb(180, 61, 61); */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    font-family: 'Mulish', sans-serif;
+}
+.navicon{
+    margin-left: 5%;
+    color: #1483EA;
+    font-size: 1.8rem;
+}
+.navcontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+.navcontent a{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    
+    letter-spacing: 1px;
+
+    color: black;
+    /* color: white; */
+    font-weight: 700;
+    text-decoration:  none;
+}
+.profile{
+    font-family: 'Rubik', sans-serif;
+    width: 55%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-top: 5rem;
+}
+.imgbox{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+}
+.imgbox img{
+    transform: translateX(-50%); margin-left: 40%; width: 25vw;
+
+}
+.introbox{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80%;
+}
+.btn-explore{
+    padding: 1rem;
+    color: white;
+    width: 6rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: #1483EA;
+    border-radius: 30px;
+}
+
+
+/********************** ABOUT **********************/
+.about{
+    /* height: 100rem; */
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+.aboutHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hire{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    margin-top: 1.4rem;
+    font-size: 3rem;
+}
+.timeline{
+    padding-top: 5rem;
+    font-family: 'Mukta Vaani', sans-serif;
+    text-align: center;
+
+    
+}
+.work1,.work2,.work3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15rem;
+}
+.leftbox, .rightbox{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    /* background-color: #00A1A7;
+    color: white; */
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+
+.vertline{
+    height: 15rem;
+    width: 2px;
+    background-color: #00A1A7;
+    border: 2px solid #00A1A7;
+    
+}
+.circle{
+    background-color: #00A1A7;
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 5px solid #00A1A7;
+    font-size: 1.5rem;
+
+}
+
+.work3 .vertline .circle,.work2 .vertline .circle{
+    background-color: white;
+    color: #00A1A7;
+
+}
+.work1 .leftbox{
+    color: #00A1A7;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.work1 .rightbox{
+    color:white;
+    font-weight: 600;
+    background-color: #00A1A7
+}
+.work2 .leftbox{
+    color:black;
+    background-color: rgba(255, 255, 255, 0.54);
+}
+.work2 .rightbox{
+    color:black;
+    background-color: none;
+    
+}
+.work3 .leftbox{
+    color:black;
+    background-color: none;
+}
+.work3 .rightbox{
+    color:black;
+    background-color: rgba(255, 255, 255, 0.54);
+}
+/********************** ABOUT **********************/
+/********************** PROJECTS **********************/
+.projects{
+    margin-top: 10rem;
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 90rem;
+    
+}
+.projects h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif; 
+    padding: 2rem;
+}
+
+.projectgrid{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.pcard{
+    height:20rem;
+    width: 25rem;
+    /* border: 2px solid black; */
+    margin: 2rem;
+    position: relative;
+    font-family: 'Mulish', sans-serif; 
+
+}
+.pcard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* opacity: 0.6; */
+}
+
+.pcard .details{
+    position: absolute;
+    /* padding: 3rem; */
+    top: 0rem; 
+    left: 0rem;
+    height: 100%;
+}
+.pcard .details .title{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30%;
+    transition: 0.5s;
+    
+}
+.pcard .details .desc{
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.pcard .details .more a{
+    
+    text-decoration: none;
+    color: white;
+}
+.more{
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    margin-bottom: 1rem;
+    transform: translateX(-50%);
+    height: 2rem;
+    width: 4rem;
+    width: -webkit-fill-available;
+    opacity: 0;
+    transition: 0.6s;
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.poverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity:0;
+}
+.pcard:hover .title{
+    transform: translateY(-3.5rem);
+}
+.pcard:hover .desc{
+    opacity: 1;
+    transform: translateY(-30%);
+}
+.pcard:hover .more {
+    opacity: 1;
+}
+.pcard:hover .poverlay{
+    opacity: 0.6;
+}
+/********************** PROJECTS **********************/
+
+/********************** SKILLS **********************/
+
+.skills{
+    height: 70rem;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.shead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_img{
+    height: 11rem;
+    width: auto;
+    margin-bottom: -4rem;
+}
+.skilldiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin-top: 5rem;
+}
+.leftskill{
+    width: 40%;
+}
+.rightskill{
+    width: 40%;
+    
+}
+.barchart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bars{
+    height: 2.5rem;
+    /* border: 2px solid black; */
+    width: 40rem;
+    margin: 0.5rem;
+    position: relative;
+    background-color: #eee;
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 3rem ;
+
+}
+.aboutme h1{
+    font-size: 4rem;
+}
+.aboutme p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-top: 2.5rem;
+    font-family: 'Mukta Vaani', sans-serif;
+    letter-spacing: 2px;
+}
+.skillname{
+    height: 100%;
+    width: 8rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 600;
+    background-color: #04C2C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    width: 25rem;
+    background-color: #00A1A7;
+    transition: 0.7s;
+    
+    
+}
+
+/********************** SKILLS **********************/
